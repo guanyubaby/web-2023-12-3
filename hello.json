@@ -1,17 +1,17 @@
 {
     "my_college_degrees": {
-         "degree": {
+         "degree01": {
            	"school": "A",
             	"Program/Magor": "A1",
             	"Type": "A2",
             	"Year conferred": "2023-01-01"
          },
 
-          "degree": {
+          "degree02": {
            	 "school": "A",
            	 "Program/Magor": "A1",
            	 "Type": "A2",
             	 "Year conferred": "2023-01-01"
-        },
+        }
     }
 }
