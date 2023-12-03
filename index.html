@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fetch Request Demo</title>
+  <title>Fetch Request</title>
 </head>
 <body>
 
@@ -14,19 +14,18 @@
 document.getElementById('fetchButton').addEventListener('click', fetchData);
 
 function fetchData() {
-  // 1. 创建一个 fetch 请求并返回一个 promise
-  const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1'; // 示例 API 地址
+
+  const apiUrl = 'https://github.com/guanyubaby/web-2023-12-3/blob/main/hello.json';
   const fetchPromise = fetch(apiUrl);
 
-  // 2. 解析 promise 使用 Response 类
   fetchPromise.then(response => {
-    // 3. 检查响应的状态码
+ 
     if (response.status === 200) {
-      // 4. 处理返回的 JSON 数据
+ 
       response.json().then(data => {
         console.log('Returned JSON data:', data);
 
-        // 在这里可以进一步处理返回的数据，例如更新页面上的内容
+   
         document.getElementById('result').innerText = JSON.stringify(data);
       });
     } else {
