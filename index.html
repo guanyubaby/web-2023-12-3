@@ -15,7 +15,7 @@ document.getElementById('fetchButton').addEventListener('click', fetchData);
 
 function fetchData() {
 
-  const apiUrl = 'https://github.com/guanyubaby/web-2023-12-3/blob/main/hello.json';
+  const apiUrl = './hello.json';
   const fetchPromise = fetch(apiUrl);
 
   fetchPromise.then(response => {
